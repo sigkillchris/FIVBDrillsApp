@@ -1,4 +1,9 @@
 com\cvg\capp\controller\TestController.class
 com\cvg\capp\config\ContactAppDispatcherServletInitializer.class
 com\cvg\capp\config\SpringWebConfig.class
+com\cvg\capp\dao\BaseDAO.class
+com\cvg\capp\domain\Drill.class
+com\cvg\capp\dao\DrillDAO.class
+com\cvg\capp\dao\DrillDAOImpl.class
+com\cvg\capp\rm\DrillRowMapper.class
 com\cvg\capp\config\SpringRootConfig.class
