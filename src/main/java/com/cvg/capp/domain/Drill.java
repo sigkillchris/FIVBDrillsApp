@@ -5,6 +5,8 @@
  */
 package com.cvg.capp.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  *
  * @author ccarr
@@ -21,6 +23,32 @@ public class Drill {
     private Integer level_id;
     private Integer page_id;
     private Integer skill_id;
+
+
+    public Drill() {
+    }
+
+    public Drill(Integer drill_id) {
+        this.drill_id = drill_id;
+    }
+
+    public Drill(@JsonProperty("drill_id") Integer drill_id,
+                   @JsonProperty("ref") String ref,
+                   @JsonProperty("name") String name,
+                   @JsonProperty("objective") String objective,
+                   @JsonProperty("description") String description,
+                   @JsonProperty("level_id") Integer level_id,
+                   @JsonProperty("skill_id") Integer skill_id) {
+        super();
+        this.drill_id = drill_id;
+        this.ref = ref;
+        this.name = name;
+        this.objective = objective;
+        this.description = description;
+        this.level_id = level_id;
+        this.skill_id = skill_id;
+
+    }
 
     public Integer getDrill_id() {
         return drill_id;
