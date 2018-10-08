@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(value = "/api/drill")
 @EnableWebMvc
@@ -24,5 +26,11 @@ public class DrillRestController {
     public Drill singleDrill(@PathVariable("drillId") int drillId) {
         System.out.println(drillService.findById(drillId));
     return drillService.findById(drillId);
+    }
+
+    //all drills
+    @RequestMapping(value = "/AllDrills", method = RequestMethod.GET)
+    public List<Drill> getAllDrills() {
+        return drillService.findAllDrills();
     }
 }
