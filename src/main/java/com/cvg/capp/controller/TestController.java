@@ -29,5 +29,10 @@ public class TestController {
     public String helloWorld()  {
         return "hello"; // -> /WEB-INF/view/hello.jsp
     }
+
+    @RequestMapping("/test/drills")
+    public String drills() {
+        return "drills"
+    }
 }
 
