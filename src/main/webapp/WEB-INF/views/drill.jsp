@@ -13,36 +13,21 @@
 <head>
     <title>Title</title>
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
-    <script type="text/javascript">
 
-            $.ajax({
-                type: "GET",
-                url: "http://localhost:8080/api/drill/AllDrills",
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                success: function (data, status, jqXHR) {
-                    
-                }
-            }).then(function(data) {
-                $('.greeting-id').append(data.id);
-                $('.greeting-content').append(data.content);
-            });
-
-    </script>
 </head>
 <body>
 
 <table border="1" width="80%" align="center" >
     <tr>
-        <td >
-            @JsonProperty("drill_id") Integer drill_id,
-            @JsonProperty("ref") String ref,
-            @JsonProperty("name") String name,
-            @JsonProperty("objective") String objective,
-            @JsonProperty("description") String description,
-            @JsonProperty("level_id") Integer level_id,
-            @JsonProperty("skill_id") Integer skill_id)
-        </td>
+        <%--<td >--%>
+            <%--@JsonProperty("drill_id") Integer drill_id,--%>
+            <%--@JsonProperty("ref") String ref,--%>
+            <%--@JsonProperty("name") String name,--%>
+            <%--@JsonProperty("objective") String objective,--%>
+            <%--@JsonProperty("description") String description,--%>
+            <%--@JsonProperty("level_id") Integer level_id,--%>
+            <%--@JsonProperty("skill_id") Integer skill_id)--%>
+        <%--</td>--%>
     </tr>
 </table>
 

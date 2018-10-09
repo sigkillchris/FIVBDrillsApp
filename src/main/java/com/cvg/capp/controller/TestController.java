@@ -24,15 +24,19 @@ import java.io.IOException;
 
 @Controller
 public class TestController {
-    
+
     @RequestMapping("/test/hello")
-    public String helloWorld()  {
+    public String helloWorld() {
         return "hello"; // -> /WEB-INF/view/hello.jsp
     }
 
     @RequestMapping("/test/drills")
     public String drills() {
-        return "drills"
+        return "drill";
+    }
+
+    @RequestMapping("/test/jq")
+    public String jq() {
+        return "jq";
     }
 }
-
