@@ -29,6 +29,9 @@ public class SpringWebConfig extends WebMvcConfigurerAdapter{
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         super.addResourceHandlers(registry); 
         //To change body of generated methods, choose Tools | Templates.
+
+        //Needed for static resources CSS, Jquery, Images, etc
+        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
     }
     
     @Bean
