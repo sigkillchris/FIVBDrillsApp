@@ -18,13 +18,15 @@
         };
 
         $(document).ready(function(){
-            alert('DOM loaded');
+            $('#myContent').html('Hello World');
         });
     </script>
     <title>Jquery Adventures</title>
 </head>
 <body>
-My JQ enabled page
+    <div id="myContent">
+        My JQ enabled page
+    </div>
 
 </body>
 </html>
