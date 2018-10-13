@@ -13,29 +13,18 @@
     <s:url var="url_jqlib" value="/static/js/jquery-3.3.1.min.js" />
     <script src="${url_jqlib}"></script>
     <script>
+        window.onload = function() {
+            alert('Window Loaded');
+        };
+
         $(document).ready(function(){
-            alert('JQuery is ready and integrated');
-            // $("#id_gettime").click(function(){
-            //     //alert('Button clicked...');
-            //     $.ajax({
-            //         url : 'get_time',
-            //         success : function (data){
-            //             $("#id_time").html(data);
-            //         }
-            //     });
-            // });
+            alert('DOM loaded');
         });
     </script>
     <title>Jquery Adventures</title>
 </head>
 <body>
-    <h1>Where do you want to go?</h1>
-    <p>Plan your next adventure.</p>
-    <ul id="destinations">
-        <li>Rome</li>
-        <li>Paris</li>
-        <li class="promo">Rio</li>
-    </ul>
+My JQ enabled page
 
 </body>
 </html>
