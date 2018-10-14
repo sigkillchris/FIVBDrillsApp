@@ -5,15 +5,33 @@
   Time: 3:14 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib uri="http://www.springframework.org/tags" prefix="s" %>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="f" %>
 <html>
 <head>
-    <title>Title</title>
-    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <s:url var="url_jqlib" value="/static/js/jquery-3.3.1.min.js" />
 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src ="${url_jqlib}"><\/script>')</script>
+    <script>
+        $(document).ready(function(){
+            var drillId =
+            (this).onload = function () {
+                $.ajax({
+                    url:"http://localhost:8080/api/drill/${drillId}",
+                    type:"GET",
+                    success:function (data) {
+                        console.log("GET DATA API RESPONSE ID: " + data);
+                    },
+                    error:function(jqXHR, textStatus, errorThrown) {
+                    }
+                })
+            }
+        });
+    </script>
+
+    <title>Title</title>
 </head>
 <body>
 

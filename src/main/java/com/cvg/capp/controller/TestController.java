@@ -5,10 +5,14 @@
  */
 package com.cvg.capp.controller;
 
+import com.cvg.capp.dao.DrillDAO;
+import com.cvg.capp.domain.Drill;
+import com.cvg.capp.service.DrillService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -25,6 +29,8 @@ import java.io.IOException;
 @Controller
 public class TestController {
 
+    private DrillService drillService;
+
     @RequestMapping("/test/hello")
     public String helloWorld() {
         return "hello"; // -> /WEB-INF/view/hello.jsp
@@ -32,11 +38,18 @@ public class TestController {
 
     @RequestMapping("/test/drills")
     public String drills() {
-        return "drill";
+        return "drills";
     }
 
     @RequestMapping("/test/jq")
     public String jq() {
         return "jq";
     }
+
+    @RequestMapping("/test/{drillId}")
+    public Drill testDrill(@PathVariable("drillId") int drillId) {
+        System.out.println(drillService.findById(drillId));
+        return drillService.findById(drillId);
+    }
+
 }
