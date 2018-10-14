@@ -15,6 +15,17 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src ="${url_jqlib}"><\/script>')</script>
     <script>
+        $.getJSON( "ajax/test.json", function( data ) {
+            var items = [];
+            $.each( data, function( key, val ) {
+                items.push( "<li id='" + key + "'>" + val + "</li>" );
+            });
+
+            $( "<ul/>", {
+                "class": "my-new-list",
+                html: items.join( "" )
+            }).appendTo( "body" );
+        });
 
     </script>
 

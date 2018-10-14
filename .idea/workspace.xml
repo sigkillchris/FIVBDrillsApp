@@ -7,19 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2233fd8d-81b7-43bb-a19e-7b8846519596" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/DrillRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/DrillRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drill.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/WEB-INF/classes/com/cvg/capp/controller/DrillRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/WEB-INF/classes/com/cvg/capp/controller/DrillRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/WEB-INF/classes/com/cvg/capp/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/WEB-INF/classes/com/cvg/capp/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/WEB-INF/views/drill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/WEB-INF/views/drill.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/FIVBDrillsApp-1.0-SNAPSHOT/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cvg/capp/controller/DrillRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cvg/capp/controller/DrillRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cvg/capp/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cvg/capp/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,19 +34,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="jq.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jq.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="368">
+              <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/TestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="266">
               <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,8 +60,8 @@
       <file leaf-file-name="drills.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+            <state relative-caret-position="368">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -133,12 +122,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cvg/capp/domain/Drill.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cvg/capp/config/SpringWebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drill.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/DrillRestController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp" />
       </list>
     </option>
   </component>
@@ -446,16 +435,15 @@
       <workItem from="1538932449020" duration="16245000" />
       <workItem from="1539022593602" duration="1132000" />
       <workItem from="1539053782217" duration="9421000" />
-      <workItem from="1539396324803" duration="18894000" />
+      <workItem from="1539396324803" duration="20820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45692000" />
+    <option name="totallyTimeSpent" value="47618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -478,7 +466,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23789173" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23789173" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.22751679" />
@@ -803,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -834,22 +815,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="266">
           <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1044#1045#0" expanded="true" />
             <element signature="e#1071#1072#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/drills.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jq.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
         </state>
       </provider>
     </entry>

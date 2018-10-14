@@ -22,6 +22,13 @@
 
         $(document).ready(function(){
             $('#myContent').html('Hello World');
+            $.ajax({
+                url: "http://rest-service.guides.spring.io/greeting"
+            }).then(function(data) {
+                $('.greeting-id').append(data.id);
+                $('.greeting-content').html(data.content);
+            });
+            console.log(data.id);
         });
     </script>
     <title>Jquery Adventures</title>
@@ -29,6 +36,10 @@
 <body>
     <div id="myContent">
         My JQ enabled page
+    </div>
+    <div>
+        <p class="greeting-id">The ID is </p>
+        <p class="greeting-content">The content is </p>
     </div>
 
 </body>
