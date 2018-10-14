@@ -28,11 +28,11 @@ public class DrillRestController {
     return drillService.findById(drillId);
     }
 
-//    //all drills
-//    @RequestMapping(value = "/drills", method = RequestMethod.GET)
-//    public List<Drill> getAllDrills() {
-//        return drillService.findAllDrills();
-//    }
+    //all drills
+    @RequestMapping(value = "/drills", method = RequestMethod.GET)
+    public List<Drill> getAllDrills() {
+        return drillService.findAllDrills();
+    }
 
     @RequestMapping(value = "/drill", method = RequestMethod.GET)
     public Drill singleDrill1(@PathVariable("drillId") int drillId) {
