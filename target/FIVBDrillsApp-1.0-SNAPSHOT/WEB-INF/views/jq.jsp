@@ -20,16 +20,45 @@
             alert('Window Loaded');
         };
 
-        $(document).ready(function(){
-            $('#myContent').html('Hello World');
-            $.ajax({
-                url: "http://rest-service.guides.spring.io/greeting"
-            }).then(function(data) {
-                $('.greeting-id').append(data.id);
-                $('.greeting-content').html(data.content);
+        // $(document).ready(function(){
+        //     $('#myContent').html('Hello World');
+        //     $.ajax({
+        //         url: "http://rest-service.guides.spring.io/greeting"
+        //     }).then(function(data) {
+        //         $('.greeting-id').append(data.id);
+        //         $('.greeting-content').html(data.content);
+        //     });
+        //
+        // });
+
+        function createNode(element) {
+            return document.createElement(element);
+        }
+
+        function append(parent, el) {
+            return parent.appendChild(el);
+        }
+
+        const ul = document.getElementById('authors');
+        const url = 'https://randomuser.me/api/?results=10';
+        fetch(url)
+            .then((resp) => resp.json())
+        .then(function(data) {
+            let authors = data.results;
+            return authors.map(function(author) {
+                let li = createNode('li'),
+                    img = createNode('img'),
+                    span = createNode('span');
+                img.src = author.picture.medium;
+                span.innerHTML = `${author.name.first} ${author.name.last}`;
+                append(li, img);
+                append(li, span);
+                append(ul, li);
+            })
+        })
+            .catch(function(error) {
+                console.log(error);
             });
-            console.log(data.id);
-        });
     </script>
     <title>Jquery Adventures</title>
 </head>
@@ -41,6 +70,8 @@
         <p class="greeting-id">The ID is </p>
         <p class="greeting-content">The content is </p>
     </div>
+    <h1>Authors</h1>
+    <ul id="authors"></ul>
 
 </body>
 </html>

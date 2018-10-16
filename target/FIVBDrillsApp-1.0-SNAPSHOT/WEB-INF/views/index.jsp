@@ -20,9 +20,9 @@
         };
 
         $(document).ready(function(){
-            $('#myContent').html('Hello World');
+
             $.ajax({
-                url: "http://rest-service.guides.spring.io/greeting"
+                url: "localho"
             }).then(function(data) {
                 $('.greeting-id').append(data.id);
                 $('.greeting-content').html(data.content);

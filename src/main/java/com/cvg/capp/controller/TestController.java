@@ -36,10 +36,6 @@ public class TestController {
         return "hello"; // -> /WEB-INF/view/hello.jsp
     }
 
-    @RequestMapping("/test/drills")
-    public String drills() {
-        return "drills";
-    }
 
     @RequestMapping("/test/jq")
     public String jq() {
@@ -50,6 +46,11 @@ public class TestController {
     public Drill testDrill(@PathVariable("drillId") int drillId) {
         System.out.println(drillService.findById(drillId));
         return drillService.findById(drillId);
+    }
+
+    @RequestMapping("/test/index")
+    public String index() {
+        Tes
     }
 
 }
