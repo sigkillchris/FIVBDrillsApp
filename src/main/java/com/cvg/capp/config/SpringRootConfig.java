@@ -24,7 +24,7 @@ public class SpringRootConfig {
     @Bean
     public BasicDataSource dataSource() {
         BasicDataSource ds = new BasicDataSource();
-        ds.setDriverClassName("com.mysql.jdbc.Driver");
+        ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
         ds.setUrl("jdbc:mysql://localhost:3306/fivbdrills");
         ds.setUsername("root");
         ds.setPassword("test");

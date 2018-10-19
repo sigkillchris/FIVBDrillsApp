@@ -31,8 +31,11 @@ public class DrillRestController {
     //all drills
     @RequestMapping(value = "/drills", method = RequestMethod.GET)
     public List<Drill> getAllDrills() {
+        System.out.println(drillService.findAllDrills());
         return drillService.findAllDrills();
     }
+
+
 
     @RequestMapping(value = "/drill", method = RequestMethod.GET)
     public Drill singleDrill1(@PathVariable("drillId") int drillId) {

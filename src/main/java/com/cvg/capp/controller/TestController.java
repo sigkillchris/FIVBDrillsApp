@@ -31,12 +31,6 @@ public class TestController {
 
     private DrillService drillService;
 
-    @RequestMapping("/test/hello")
-    public String helloWorld() {
-        return "hello"; // -> /WEB-INF/view/hello.jsp
-    }
-
-
     @RequestMapping("/test/jq")
     public String jq() {
         return "jq";
@@ -50,7 +44,7 @@ public class TestController {
 
     @RequestMapping("/test/index")
     public String index() {
-        Tes
+        return "index";
     }
 
 }

@@ -26,8 +26,9 @@ public class DrillDAOImpl extends BaseDAO implements DrillDAO {
 
     @Override
     public List<Drill> findAll() {
-        String sql = "SELECT drill_id, ref, name, objective, description, mods, pointers, level_id, FROM drills";
+        String sql = "SELECT drill_id, ref, name, objective, description, mods, pointers, level_id, skill_id FROM drills";
         return getJdbcTemplate().query(sql, new DrillRowMapper());
+
     }
 
     @Override

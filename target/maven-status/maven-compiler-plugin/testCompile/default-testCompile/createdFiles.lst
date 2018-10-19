@@ -1,2 +1,3 @@
 com\cvg\capp\test\TestDataSource.class
+com\cvg\capp\test\TestDrillDAOFindAllRecords.class
 com\cvg\capp\test\TestDrillDAOFindSingleRecord.class

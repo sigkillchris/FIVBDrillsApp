@@ -20,12 +20,12 @@
         };
 
         $(document).ready(function(){
-
+            var jqxhr =
             $.ajax({
-                url: "localho"
+                url: "http://localhost:8080/FIVBDrillsApp/api/drill/1"
             }).then(function(data) {
-                $('.greeting-id').append(data.id);
-                $('.greeting-content').html(data.content);
+                $('.test').append(data.name);
+
             });
 
         });
@@ -33,6 +33,7 @@
     <title>Index</title>
 </head>
 <body>
+<p class="test">This is Drill name: </p>
 <table>
     <tr>
         <th>
