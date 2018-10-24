@@ -30,20 +30,26 @@
 
         }
 
-        function success(e)
-        {
-            var drill="";
-            $.each(e, function (index,value)
-            {
 
-                drill += "<p>Drill Number: " + value.drill_id + "</p>";
-                drill += "<h2>Drill Name: " + value.name + "</h2>";
-                drill += "<p>Skill level: " + value.level_id + "</h2>";
-                drill += "<div style ='border-bottom: 1px solid black;'></div>";
 
+        function success(e) {
+            $.each(e, function(index, value) {
+
+                $('<tr>').html(
+                    "<td>" + value.drill_id + "</td>" +
+                        // TODO make link to drill page
+                    "<td><a href='http://localhost:8080/FIVBDrillsApp/api/drill/'>" + value.name + "</a></td>" +
+                    "<td>" + value.level_id + "</td>").appendTo('#drills');
             });
-            $('#drills').html(drill);
         }
+
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#drills tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+
 
     </script>
     <title>FIVB All Drills Page</title>
@@ -52,29 +58,18 @@
 <body>
 <h1 id="center">FIVB Drills</h1>
 <h3 id="center">Drills skill levels are 1-5 from beginner to advanced</h3>
-    <div id="containter">
-        <div id="drills"></div>
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+    <div id="container">
+        <table id="drills" border="1" cellpadding="3"  width="100%">
+            <tr>
+            <th>drill id</th>
+            <th>name</th>
+            <th>level_id</th>
+            </tr>
+
+        </table>
     </div>
-
-
-
-
-
-<%--<p class="test">This is Drill name: </p>--%>
-<%--<table id="drill" border ="1">--%>
-    <%--<tr>--%>
-        <%--<th>--%>
-            <%--Drill ID--%>
-        <%--</th>--%>
-        <%--<th>--%>
-            <%--Drill Name--%>
-        <%--</th>--%>
-        <%--<th>--%>
-            <%--Level--%>
-        <%--</th>--%>
-    <%--</tr>--%>
-
-<%--</table>--%>
 
 </body>
 </html>
