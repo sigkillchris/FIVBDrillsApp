@@ -31,6 +31,7 @@ public class TestController {
 
     private DrillService drillService;
 
+
     @RequestMapping("/test/jq")
     public String jq() {
         return "jq";
@@ -46,5 +47,8 @@ public class TestController {
     public String index() {
         return "index";
     }
+
+    @RequestMapping("/")
+    public String home() { return "home"; }
 
 }
