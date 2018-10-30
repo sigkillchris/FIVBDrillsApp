@@ -30,8 +30,6 @@
 
         }
 
-
-
         function success(e) {
             $.each(e, function(index, value) {
 
@@ -42,15 +40,15 @@
                     "<td>" + value.level_id + "</td>").appendTo('#drills');
             });
         }
-
-        $("#myInput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#drills tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#drills tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
             });
         });
-
-
     </script>
     <title>FIVB All Drills Page</title>
 
@@ -61,12 +59,18 @@
 <input id="myInput" type="text" placeholder="Search..">
 <br><br>
     <div id="container">
-        <table id="drills" border="1" cellpadding="3"  width="100%">
+        <table border="1" cellpadding="3"  width="100%">
+            <thead>
             <tr>
-            <th>drill id</th>
-            <th>name</th>
-            <th>level_id</th>
+                <th>drill id</th>
+                <th>name</th>
+                <th>level_id</th>
             </tr>
+
+            </thead>
+            <tbody id="drills">
+
+            </tbody>
 
         </table>
     </div>

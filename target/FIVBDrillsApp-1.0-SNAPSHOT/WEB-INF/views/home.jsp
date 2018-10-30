@@ -24,7 +24,11 @@
 <s:url var="url_bg" value="/static/images/fivbdrillbg.jpg"/>
 <body background="${url_bg}">
 <div>
-<
+<ul>
+    <li>stylize html/css, js/jquery</li>
+    <li>create header menu</li>
+    <li>finish db</li>
+</ul>
 </div>
 
 </body>
