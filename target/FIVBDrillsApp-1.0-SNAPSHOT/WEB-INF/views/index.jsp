@@ -19,7 +19,6 @@
     <script>
         window.onload = function() {
             // alert('Window Loaded');
-
             var service = "http://localhost:8080/FIVBDrillsApp/api/drill";
             $.ajax({
                 dataType: "json",
@@ -50,7 +49,7 @@
             });
         });
     </script>
-    <title>FIVB All Drills Page</title>
+    <title>FIVB Drills App</title>
 
 </head>
 <body>

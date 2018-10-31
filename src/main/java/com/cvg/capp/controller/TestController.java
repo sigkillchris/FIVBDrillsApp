@@ -42,13 +42,4 @@ public class TestController {
         System.out.println(drillService.findById(drillId));
         return drillService.findById(drillId);
     }
-
-    @RequestMapping("/test/index")
-    public String index() {
-        return "index";
-    }
-
-    @RequestMapping("/")
-    public String home() { return "home"; }
-
 }

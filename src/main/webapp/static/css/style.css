@@ -16,7 +16,7 @@ body{
 #center {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
+    border: 3px solid;
     padding: 10px;
 }
 .error{
@@ -26,6 +26,11 @@ body{
     color: #0000FF;
 }
 
+h1 {
+    font-family: Arial, Helvetica;
+    color: dodgerblue;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -33,11 +38,11 @@ table {
 }
 
 td, th {
-    border: 1px solid #DDDD99;
+    border: 1px solid dodgerblue;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #DDDD99;
+    background-color: dodgerblue;
 }
