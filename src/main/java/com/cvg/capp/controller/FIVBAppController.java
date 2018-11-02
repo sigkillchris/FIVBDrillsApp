@@ -10,6 +10,7 @@ import com.cvg.capp.service.DrillService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  *
@@ -32,7 +33,9 @@ public class FIVBAppController {
     @RequestMapping("/practice")
     public String practice() { return "practice"; }
 
-    @RequestMapping("/drill")
-    public String drill() { return "drill"; }
+    @RequestMapping("/viewdrill")
+    //viewdrill?drill={}
+    public String drill(@RequestParam String drill) {
+        return "viewdrill"; }
 
 }
