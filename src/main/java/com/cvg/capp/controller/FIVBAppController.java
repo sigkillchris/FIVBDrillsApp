@@ -36,6 +36,7 @@ public class FIVBAppController {
     @RequestMapping("/viewdrill")
     //viewdrill?drill={}
     public String drill(@RequestParam String drill) {
+
         return "viewdrill"; }
 
 }

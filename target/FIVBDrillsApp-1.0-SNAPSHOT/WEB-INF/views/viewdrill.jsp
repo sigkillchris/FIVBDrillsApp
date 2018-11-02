@@ -23,37 +23,37 @@
 
     <script>
         window.onload = function() {
-            alert('Window Loaded');}
+        //    alert('Window Loaded');
 
-        //     var service = "http://localhost:8080/FIVBDrillsApp/api/drill";
-        //     $.ajax({
-        //         dataType: "json",
-        //         type: "GET",
-        //         url: service + "/drills",
-        //         success: success
-        //     });
-        //
-        // }
-        //
-        // function success(e) {
-        //     $.each(e, function(index, value) {
-        //
-        //         $('<tr>').html(
-        //             "<td>" + value.drill_id + "</td>" +
-        //             // TODO make link to drill page
-        //             "<td><a href='http://localhost:8080/FIVBDrillsApp/api/drill/'>" + value.name + "</a></td>" +
-        //             "<td>" + value.level_id + "</td>").appendTo('#drills');
-        //     });
-        // }
-        //
-        // $(document).ready(function(){
-        //     $("#myInput").on("keyup", function() {
-        //         var value = $(this).val().toLowerCase();
-        //         $("#drills tr").filter(function() {
-        //             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        //         });
-        //     });
-        // });
+            var service = "http://localhost:8080/FIVBDrillsApp/api/drill";
+            $.ajax({
+                dataType: "json",
+                type: "GET",
+                url: service + "/drills",
+                success: success
+            });
+
+        }
+
+        function success(e) {
+            $.each(e, function(index, value) {
+
+                $('<tr>').html(
+                    "<td>" + value.drill_id + "</td>" +
+                    // TODO make link to drill page
+                    "<td><a href='http://localhost:8080/FIVBDrillsApp/api/drill/'>" + value.name + "</a></td>" +
+                    "<td>" + value.level_id + "</td>").appendTo('#drills');
+            });
+        }
+
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#drills tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
 
         function openInNewTab(url) {
             var win = window.open(url, '_blank');
