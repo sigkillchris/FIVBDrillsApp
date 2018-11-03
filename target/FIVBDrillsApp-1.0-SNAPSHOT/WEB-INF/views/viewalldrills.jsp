@@ -106,8 +106,6 @@
             <%-- Footer --%>
         </td>
     </tr>
-
-
 </table>
 </body>
 </html>

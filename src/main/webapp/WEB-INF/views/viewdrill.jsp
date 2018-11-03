@@ -48,26 +48,39 @@
 
 <%--<s:url var="url_bg" value="/static/images/fivbdrillbg.jpg"/>--%>
 <body background="${url_bg}" >
-
 <table border="1" width="80%" align="center" >
-    <tr>
-        <%--<td >--%>
-            <%--@JsonProperty("drill_id") Integer drill_id,--%>
-            <%--@JsonProperty("ref") String ref,--%>
-            <%--@JsonProperty("name") String name,--%>
-            <%--@JsonProperty("objective") String objective,--%>
-            <%--@JsonProperty("description") String description,--%>
-            <%--@JsonProperty("level_id") Integer level_id,--%>
-            <%--@JsonProperty("skill_id") Integer skill_id)--%>
+    <tr></tr>
+    <%--<tr>--%>
+        <%--<td height="80px">--%>
+            <%--&lt;%&ndash; Header &ndash;%&gt;--%>
+            <%--<jsp:include page="include/header.jsp"/>--%>
         <%--</td>--%>
+    <%--</tr>--%>
+    <tr>
+        <td height="25px">
+            <%-- Menu --%>
+            <jsp:include page="include/menu.jsp"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br>
+
+                <p class="did"></p>
+                <p class="name"></p>
+                <p class="objective"></p>
+                <p class="description"></p>
+                <p class="level_id"></p>
+                <p class="skill_id"></p>
+
+        </td>
+    </tr>
+    <tr>
+        <td height ="25px">
+            <jsp:include page="include/footer.jsp" />
+            <%-- Footer --%>
+        </td>
     </tr>
 </table>
-<p>test</p>
-<p class="did"></p>
-<p class="name"></p>
-<p class="objective"></p>
-<p class="description"></p>
-<p class="level_id"></p>
-<p class="skill_id"></p>
 </body>
 </html>
