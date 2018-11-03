@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2233fd8d-81b7-43bb-a19e-7b8846519596" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="2233fd8d-81b7-43bb-a19e-7b8846519596" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -551,12 +549,12 @@
       <workItem from="1540338774573" duration="8682000" />
       <workItem from="1540834192006" duration="15602000" />
       <workItem from="1541126774617" duration="15389000" />
-      <workItem from="1541259909356" duration="2404000" />
+      <workItem from="1541259909356" duration="2890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136800000" />
+    <option name="totallyTimeSpent" value="137286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
