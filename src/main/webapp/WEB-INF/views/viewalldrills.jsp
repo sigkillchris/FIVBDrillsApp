@@ -84,7 +84,7 @@
     <tr>
         <td>
             <input id="myInput" type="text" placeholder="Search..">
-            <br>
+            <br><br>
             <table>
                 <thead>
                 <tr>

@@ -50,12 +50,7 @@
 <body background="${url_bg}" >
 <table border="1" width="80%" align="center" >
     <tr></tr>
-    <%--<tr>--%>
-        <%--<td height="80px">--%>
-            <%--&lt;%&ndash; Header &ndash;%&gt;--%>
-            <%--<jsp:include page="include/header.jsp"/>--%>
-        <%--</td>--%>
-    <%--</tr>--%>
+
     <tr>
         <td height="25px">
             <%-- Menu --%>
