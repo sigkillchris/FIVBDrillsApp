@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2233fd8d-81b7-43bb-a19e-7b8846519596" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/practice.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/practice.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewalldrills.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewalldrills.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewdrill.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewdrill.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +64,7 @@
         <counts>
           <entry key="css" value="88" />
           <entry key="java" value="573" />
-          <entry key="jsp" value="1097" />
+          <entry key="jsp" value="1104" />
           <entry key="md" value="485" />
         </counts>
       </usages-collector>
@@ -74,7 +72,7 @@
         <counts>
           <entry key="CSS" value="88" />
           <entry key="JAVA" value="573" />
-          <entry key="JSP" value="1097" />
+          <entry key="JSP" value="1104" />
           <entry key="Markdown" value="485" />
         </counts>
       </usages-collector>
@@ -91,19 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+              <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewdrill.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
+            <state relative-caret-position="278">
               <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
@@ -193,7 +191,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/cvg/capp/controller/TestController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/menu.jsp" />
@@ -207,6 +204,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewdrill.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewalldrills.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/practice.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp" />
       </list>
     </option>
   </component>
@@ -553,12 +551,12 @@
       <workItem from="1540338774573" duration="8682000" />
       <workItem from="1540834192006" duration="15602000" />
       <workItem from="1541126774617" duration="15389000" />
-      <workItem from="1541259909356" duration="2232000" />
+      <workItem from="1541259909356" duration="2404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136628000" />
+    <option name="totallyTimeSpent" value="136800000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -968,17 +966,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewdrill.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        <state relative-caret-position="278">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/viewdrill.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="119">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
         </state>
       </provider>
     </entry>
