@@ -23,14 +23,12 @@ public class DrillRestController {
     //single drill
     @RequestMapping(value = "/{drillId}", method = RequestMethod.GET)
     public Drill singleDrill(@PathVariable("drillId") int drillId) {
-        System.out.println(drillService.findById(drillId));
-    return drillService.findById(drillId);
+        return drillService.findById(drillId);
     }
 
     //all drills
     @RequestMapping(value = "/drills", method = RequestMethod.GET)
     public List<Drill> getAllDrills() {
-        System.out.println(drillService.findAllDrills());
         return drillService.findAllDrills();
     }
 

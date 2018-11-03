@@ -24,47 +24,29 @@
     <script>
         window.onload = function() {
         //    alert('Window Loaded');
-
             var service = "http://localhost:8080/FIVBDrillsApp/api/drill";
             $.ajax({
                 dataType: "json",
                 type: "GET",
-                url: service + "/drills",
-                success: success
+                url: service + "/" + ${did}
+            }).then(function (data) {
+                $('.did').append(data.did);
+                $('.name').append(data.name);
+                $('.objective').append(data.objective);
+                $('.description').append(data.description);
+                $('.skill_id').append(data.level_id);
+                $('.drill_id').append(data.drill_id);
             });
-
+            //TODO if no parameter is passed to JSP
         }
 
-        function success(e) {
-            $.each(e, function(index, value) {
 
-                $('<tr>').html(
-                    "<td>" + value.drill_id + "</td>" +
-                    // TODO make link to drill page
-                    "<td><a href='http://localhost:8080/FIVBDrillsApp/api/drill/'>" + value.name + "</a></td>" +
-                    "<td>" + value.level_id + "</td>").appendTo('#drills');
-            });
-        }
-
-        $(document).ready(function(){
-            $("#myInput").on("keyup", function() {
-                var value = $(this).val().toLowerCase();
-                $("#drills tr").filter(function() {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-
-        function openInNewTab(url) {
-            var win = window.open(url, '_blank');
-            win.focus();
-        }
     </script>
     <title>FIVB All Drills Page</title>
 
 </head>
 
-<s:url var="url_bg" value="/static/images/"/>
+<%--<s:url var="url_bg" value="/static/images/fivbdrillbg.jpg"/>--%>
 <body background="${url_bg}" >
 
 <table border="1" width="80%" align="center" >
@@ -81,5 +63,11 @@
     </tr>
 </table>
 <p>test</p>
+<p class="did"></p>
+<p class="name"></p>
+<p class="objective"></p>
+<p class="description"></p>
+<p class="level_id"></p>
+<p class="skill_id"></p>
 </body>
 </html>

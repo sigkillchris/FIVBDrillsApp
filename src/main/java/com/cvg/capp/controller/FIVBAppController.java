@@ -8,6 +8,7 @@ package com.cvg.capp.controller;
 import com.cvg.capp.domain.Drill;
 import com.cvg.capp.service.DrillService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -34,9 +35,8 @@ public class FIVBAppController {
     public String practice() { return "practice"; }
 
     @RequestMapping("/viewdrill")
-    //viewdrill?drill={}
-    public String drill(@RequestParam String drill) {
-
+    public String drill(Model model, @RequestParam int drill) {
+        model.addAttribute("did", drill);
         return "viewdrill"; }
 
 }
