@@ -35,12 +35,12 @@
 
         }
 
+
         function success(e) {
             $.each(e, function(index, value) {
 
                 $('<tr>').html(
                     "<td>" + value.drill_id + "</td>" +
-                    // TODO make link to drill page
                     "<td><a href='http://localhost:8080/FIVBDrillsApp/viewdrill?drill=" + value.drill_id + "'>" + value.name + "</a></td>" +
                     "<td>" + value.level_id + "</td>").appendTo('#drills');
             });
@@ -53,7 +53,15 @@
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
             });
+
+            $("#random").click(function () {
+                var num = Math.round(Math.random() * 10) * 1;
+                $("#rndnum").html(num);
+
+            });
         });
+
+
     </script>
     <title>FIVB Practice Builder</title>
 
@@ -72,8 +80,11 @@
     <tr>
         <td height="25px">
             <%-- Menu --%>
-            <jsp:include page="include/menu.jsp"/>
+            <jsp:include page="include/menu.jsp"/> |
+                <button id="random">Surprise!</button>
+            <p id ="rndnum">didn't work</p>
         </td>
+
     </tr>
     <tr>
         <td>
