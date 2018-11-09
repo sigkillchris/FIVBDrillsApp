@@ -21,9 +21,15 @@ import org.springframework.web.servlet.view.JstlView;
  */
 
 @Configuration
+<<<<<<< Updated upstream
 @ComponentScan(basePackages = {"com.cvg"})
 @EnableWebMvc
 public class SpringWebConfig extends WebMvcConfigurerAdapter{
+=======
+//@ComponentScan(basePackages = {"com.cvg"})
+//@EnableWebMvc
+public class SpringWebConfig implements WebMvcConfigurer {
+>>>>>>> Stashed changes
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

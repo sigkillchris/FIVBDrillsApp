@@ -5,31 +5,25 @@
  */
 package com.cvg.capp.controller;
 
-import com.cvg.capp.dao.DrillDAO;
 import com.cvg.capp.domain.Drill;
 import com.cvg.capp.service.DrillService;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author ccarr
  */
 
-@Controller
+@RestController
 public class TestController {
 
-    private DrillService drillService;
+    private final DrillService drillService;
+
+    public TestController(DrillService drillService) {
+        this.drillService = drillService;
+    }
 
 
     @RequestMapping("/test/jq")
