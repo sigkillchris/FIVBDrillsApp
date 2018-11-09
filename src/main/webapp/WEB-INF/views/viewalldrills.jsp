@@ -26,7 +26,7 @@
         window.onload = function() {
             // alert('Window Loaded');
 
-            var service = "http://localhost:8080/FIVBDrillsApp/api/drill";
+            var service = "http://localhost:8080/api/drill";
             $.ajax({
                 dataType: "json",
                 type: "GET",
@@ -42,7 +42,7 @@
                 $('<tr>').html(
                     "<td>" + value.drill_id + "</td>" +
                     // TODO make link to drill page
-                    "<td><a href='http://localhost:8080/FIVBDrillsApp/viewdrill?drill=" + value.drill_id + "'>" + value.name + "</a></td>" +
+                    "<td><a href='http://localhost:8080/viewdrill?drill=" + value.drill_id + "'>" + value.name + "</a></td>" +
                     "<td>" + value.level_id + "</td>").appendTo('#drills');
             });
         }

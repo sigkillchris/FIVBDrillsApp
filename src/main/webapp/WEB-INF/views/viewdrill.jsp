@@ -24,7 +24,7 @@
     <script>
         window.onload = function() {
         //    alert('Window Loaded');
-            var service = "http://localhost:8080/FIVBDrillsApp/api/drill";
+            var service = "http://localhost:8080/api/drill";
             $.ajax({
                 dataType: "json",
                 type: "GET",
