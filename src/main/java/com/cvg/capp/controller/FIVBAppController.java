@@ -17,8 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @author ccarr
  */
 
-@Controller
+@RestController
 public class FIVBAppController {
+
     @RequestMapping("/viewalldrills")
     public String index() {
         return "viewalldrills";
