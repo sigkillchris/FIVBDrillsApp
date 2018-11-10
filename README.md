@@ -5,7 +5,7 @@ This app was built originally in Netbeans. I then ported it and continued develo
 
 I have future plans to port it for use in Eclipse.
 
-This application uses Tomcat 8.5, Java 1.8, Spring 5.0.6, Maven 2.
+This application uses Java 1.8, Spring Boot, Maven 3.
 
 The stack is as follows:
 HTML, JQuery, CSS; Java 1.8; MySQL 8
